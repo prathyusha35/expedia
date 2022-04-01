@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .navbar{
+            border:1px solid black;
+            height:80px;
+            width:100%;
+            margin:auto;
+            margin-top:10px;
+            display:flex;
+            justify-content: space-between;
+            background-color: #fff;
+            box-shadow: 0px 1px 0px 0px rgb(0 11 38 / 12%)
+           
+
+        }
+        .navbar>div{
+            border:1px solid red;
+            height:50px;
+            width:40%;
+            display:flex; 
+            justify-content: space-around;  
+             padding:10px 0px 0px 5px; 
+         }
+         .right{
+             display:flex;
+             
+         }  
+        .right>div{
+            border:1px solid red;
+            height:80px;
+            width:40%;
+            display:flex;
+            justify-content: space-between; 
+    
+        }
+        .choice:hover{
+            cursor: pointer;
+            border:none;
+            text-decoration: none;
+        }
+       
+        .more>ul{
+            display:none;
+        }
+        #second{
+            border:1px solid red;
+            height:300px;
+            width:90%;
+            margin:auto;
+            margin-top:30px;
+            border-radius: 5px;
+            /* gap:10px; */
+            
+            
+        }
+          #second>div{ 
+             display:flex;
+            justify-content:center; 
+            justify-content: space-evenly;
+             padding:0px 50px 50px 300px;
+            margin:20px;
+            gap:50px; 
+            /* border-bottom: 1px solid #b9b6b8; */
+        
+           
+
+           
+        }  
+        /* #location>div{ */
+            /* width:60%;
+            height:50px;
+            border:1px solid red;
+            padding:20px 50px 50px 50px;
+            margin-top:5px; */
+
+        /* } */
+        /* .loc{
+            height:30px;
+            width:200px;
+            border-radius: 10px; */
+        /* } */
+        .third{
+            border:1px solid red;
+            height:400px;
+            width:90%;
+            margin:auto;
+            margin-top:25px;
+            border-radius:5px;
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+            
+        }
+          #pic{
+            height:400px;
+            width:100%;
+            background-image: url("https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg");
+            background-size:100% 400px;
+            background-repeat: no-repeat;
+            
+            
+        } 
+        
+        .fourth{
+            border:1px solid red;
+            height:250px;
+            width:90%;
+            margin:auto;
+            margin-top:100px;
+            border-radius:5px;
+        }
+        #secondpic>img{
+            width:100%;
+            height:250px;
+        
+        }
+        .varieties{
+            display:flex;
+            justify-content: space-around;
+            /* color: inherit;
+            color: #343B53;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.125rem;
+            background: #3662D8;
+            bottom: 0;
+            height: 2px;
+            left: 0;
+            position: absolute; */
+            height:100px;
+            width:70px;
+            min-width:600px;
+            gap:30px;
+            align-items: center;
+            /* margin:auto; */
+            
+            
+        }
+       a{
+            position:relative;
+            text-decoration:none;
+            font-family:'Poppins',sans-serif;
+            /* color:#3662d8; */
+            font-size:14px;
+            letter-spacing:0.5px;
+            /* border-bottom: 1px solid #b9b6b8; */
+           
+        }
+        a:after{
+            content:"";
+            position:absolute;
+            background-color: #3662d8;
+            height:3px;
+            width:0;
+            left:0;
+            bottom:-10px;
+            transition:0.3s;
+        }
+        a:hover{
+            color:#3662d8;
+        }
+        a:hover:after{
+            width:100%;
+
+        }
+        /* .varieties>hr{
+            border: 0;
+             border-bottom: 1px solid #b9b6b8;
+            clear: both;
+             display: block;
+             height: 1px;
+             margin: 0.938rem 0 1rem;
+            padding: 0px;
+        } */
+        #img{
+            height:300px;
+            width:400px;    
+        }
+        #pad{
+            padding-left: 20px;
+        }
+        .fifth{
+            border:1px solid red;
+            height:300px;
+            width:90%;
+            margin-top: 20px;
+            margin-left:73px;
+            border-radius: 5px;
+            display:flex;
+
+        }
+        #qr{
+            height:145px;
+            width:145px;
+            margin-left: 637px;
+            margin-right:500px;
+            margin-top: -580px;
+            margin-bottom: 165px;
+            /* bottom: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%; */
+            
+        }
+        #thirdpic{
+            /* border:1px solid red; */
+            height:300px;
+            width:40%;
+            /* background-image:url("https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_App_650x514.jpg"); */
+            background-size: 100% 400px;
+            background-repeat: no-repeat;
+            display:flex;
+        }
+       
+          #explore{
+            border:1px solid red;
+            height:80px;
+            width:30%;
+            margin:auto;
+            margin-top:10px;
+            text-align: center;
+            padding-top: 0px;
+        }  
+         #explore p{
+            margin-bottom: 0px;
+            color: #141D38;
+            font-size: 0.880rem;
+            font-weight: 550;
+            line-height: 1.130rem;
+        }
+        #explore a{
+            color:#3662d8;
+
+        }
+       
+         a{
+             text-decoration:none;
+
+         }
+         ul{
+             list-style:none;
+         }
+         footer{
+             box-sizing: border-box;
+         }
+         .up-section ul{
+             font-family:calibri;
+             margin:0px;
+             padding:0px 20px;
+         }
+         .up-section h1{
+            color: #141D38;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.115rem;
+         }
+         .up-section ul li a{
+            font-size: 0.90rem;
+            gap: 0.50rem;
+            line-height: 1.55rem;
+            color: #3662d8;
+            
+
+         }
+         .up-section ul li p{
+             font-size:14px;
+             color:#575a70;
+             line-height:10p;
+         }
+         .up-section>img{
+             margin-top:-190px;
+         }
+         .up-section{
+             display:flex;
+             justify-content: space-between;
+             padding:3% 0px;
+             margin:auto;
+             width:90%;
+             flex-wrap:wrap;
+         }
+         #content{
+             /* border:1px solid red; */
+             height:300px;
+             width:400px;
+             padding:30px 60px ;
+             text-align: left;
+         }
+         #content>h1{
+             font-size: 45px;
+             color:#ffffff;
+         }
+         #content>p{
+             font-size: 18px;
+             color:#ffffff;
+         }
+         #content>button{
+            background-color: #1349df;
+            color: #FFFFFF;
+            border-radius: 0.5rem;
+            font-size: 18px;
+            margin:5% ;
+            padding:15px 25px;
+         }
+         /* select:focus{
+             width:200px;
+             
+         } */
+        select>option{
+             margin:30px;
+
+         }
+         .second-opt{
+             width:500px;
+             padding:100px;
+         }
+         .footerimg{
+             /* border:1px solid red; */
+             /* height:100px; */
+             /* width:90%; */
+             text-align: center;
+             
+             
+         }
+         hr {
+         border: 0;
+        border-top: 1px solid #b9b6b8;
+        clear: both;
+        display: block;
+        height: 1px;
+         margin: 0.938rem 0 1rem;
+        padding: 0;
+        }
+        .text{
+            /* border:1px solid red; */
+            height:300px;
+            width:50%;
+            display:flex;
+        }
+        /* form{ */
+            /* width:90%; */
+            /* max-width:600px; */
+        /* } */
+        /* .items{ */
+            /* border:1px solid red; */
+            /* height:200px; */
+            /* width:200%; */
+            /* margin:auto; */
+            /* margin-top:-90px; */
+            /* margin-bottom:100px; */
+            /* padding:-10px 20px; */
+            /* line-height:0px; */
+            /* margin-left:-300px; */
+            /* margin-bottom:30px; */
+            /* position: relative; */
+            /* display: flex; */
+            /* justify-content: space-between; */
+            /* margin-left:0px; */
+            /* margin-right: 50px; */
+            /* gap:30px; */
+
+        /* } */
+         /* .items>input{ */
+            /* height:50px;
+            width:260px;
+            gap:-300px;
+            border-radius: 10px; */
+            /* width:70%; */
+            /* padding:10px; */
+            /* outline:0; */
+            /* border:1px solid black; */
+            /* color:black; */
+            /* background:transparent; */
+            /* font-size:15px; */
+        /* }  */
+        /* label{ */
+            /* height:100%; */
+            /* position:absolute; */
+            /* left:0; */
+            /* top:0; */
+            /* padding:10px; */
+            /* cursor:text; */
+        /* } */
+        .input[type=text]{
+            width:50%;
+            border:2px solid #aaa;
+            border-radius:4px;
+            margin:8px 0;
+            outline:none;
+            padding:8px;
+            box-sizing:border-box;
+            transition:.3s;
+        }
+        .input[type=text]:focus{
+            border-color:#575a70;
+            box-shadow: #575a70;
+        }
+        .inputWithIcon input[type=text]{
+            padding-left: 40px;
+        }
+        .inputWithIcon{
+            position:relative;
+        }
+        .inputWithIcon i{
+            position:absolute;
+            left:0;
+            top:8px;
+            padding:9px 8px;
+            color:#575a70;
+        }
+        .english>img{
+            width:20px;
+            height:20px;
+            margin:5px;
+        }
+        .english{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+        
+         
+         
+
+    </style>
+</head>    
+<body>
+           
+    <div class="navbar">
+        <div>
+            <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"/>
+        
+               <select >
+                   <option class="first-opt">More Travel</option>
+                   <option class="first-opt">Stays</option>
+                   <option class="first-opt">Flights</option>
+                   <option class="first-opt">Cars</option>
+                   <option class="first-opt">Packages</option>
+                   <option class="first-opt">Holiday Activities</option>
+                   <option class="first-opt">Deals</option>
+                   <option class="first-opt">Group Meetings</option>
+                   <option class="first-opt">Mobile</option>
+               </select>
+
+                    
+        
+        </div>
+       
+        <div class="right">
+             <p class="english"><img src="https://cdn-icons-png.flaticon.com/512/546/546310.png"><a>English</a></p>
+            <p><a>Support</a></p>
+            <p><a>Trips</a></p>
+           <p> <a href="signin.html">Signin</a></p>
+            
+        </div>
+    </div> 
+        
+    </div>
+    <div id="second">
+        <div class="varieties">
+           <a href="# "><span>Stay</span></a>
+            <a href="#"><span>Flights</span></a>
+            <a href="#"><span>Cars</span></a>
+            <a href="#"><span>Packages</span></a>
+            <a href="#"><span>Things to do</span></a>
+            
+        </div>
+        <div classs="location">
+                <div class="inputWithIcon">
+                    <input type="text" id="Going to" placeholder="Going to"required>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <!-- <label for="Going to"><i class="fa-solid fa-location-dot"></i>Going to</label> -->
+                    <input type="check-in" id="Check-in 15Apr" placeholder="Check-in" required>
+                    <!-- <label for="Check-in 15Apr">Check-in 15Apr</label> -->
+                    <input type="check-out" id="Check-out" placeholder="Check-out"required>
+                    <!-- <label for="Check-out">Check-out 16Apr</label> -->
+                    <input type="text" id="travellers" placeholder="Travellers"required>
+                    <!-- <label for="Travellers" id="Travellers"></label> -->
+            </div>
+            
+        </div>
+    </div>
+    <div class="third">
+        <div id="pic">
+            <div id="content">
+                <h1>Save instantly with Expedia Rewards</h1>
+                <p>You can enjoy access to perks like Member Prices, saving you 10% or more on select hotels. Terms may apply.</p>
+                <button>See Member Prices</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="fourth">
+        <div id="secondpic">
+            <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg"/>
+        </div>
+    </div>
+    <div class="fifth">
+       
+             <!-- <img src="https://a.travel-assets.com/mad-service/header/takeover/expedia_marquee_refresh.jpg" / -->
+
+                <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_App_650x514.jpg" id="img">
+             
+
+                <div id="pad">
+                    <h1>Members get more on the app</h1>
+                    <p style="width:570px">Earn double Expedia Rewards points when you book on the app. Plus, get travel alerts and manage your bookings on the go.</p>
+                    <h3>Text yourself a download link</h3>
+                    <div>
+                        <input type="select" placeholder="Country code India +91" style="height:50px;width:140px; border-radius:10px;">
+                        <input type="number" placeholder="phone number"  style="height:50px;width:150px; border-radius:10px;">
+                        <button style="height:55px;width:180px;border-radius:10px;color:white;background-color: #3662d8;">Get the app</button>
+                        <div>
+                            <p style="width:650px">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_HP.png" id="qr">
+                            <h4 style="margin-left:650px;margin-bottom: 500px; margin-top: -180px;">Scan the QR code</h4>
+                        </div>
+                       
+
+                    </div>
+
+                </div>
+              
+        
+       
+    </div>
+    <div id="explore">
+        <p>Explore a world of travel with Expedia</p>
+        <a href="#">Discover new places and Experiences</a>
+    </div>
+    <footer>
+        <div class="up-section">
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"/>
+            <ul>
+                <h3>Company</h3>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Job</a></li>
+                <li><a href="#">List Your Property</a></li>
+                <li><a href="#">Partnership</a></li>
+            </ul>
+            <ul>
+                <h3>Explore</h3>
+                <li><a href="#">India travel guide</a></li>
+                <li><a href="#">Hotels in India</a></li>
+                <li><a href="#">Holiday rentals in India</a></li>
+                <li><a href="#">Holiday Packages in India</a></li>
+                <li><a href="#">Domestic Flights</a></li>
+                <li><a href="#">Car Hire in India</a></li>
+                <li><a href="#">All Accommodation Types</a></li>
+                <li><a href="#">Travel Blogs</a></li>
+            </ul>
+            <ul>
+                <h3>Terms and Policies</h3>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Vrbo terms and conditions</a></li>
+            </ul>
+            <ul>
+                <h3>Help</h3>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Change or cancel your booking</a></li>
+                <li><a href="#">Refund process and timelines</a></li>
+                <li><a href="#">Book a flight using an airline credit</a></li>
+                <li><a href="#">International travel documents</a></li>
+            </ul>
+        </div>
+        <div class="footerimg">
+            <hr>
+            <img   src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"/>
+        </div>
+        
+    </footer>       
+</body>
+</html>
