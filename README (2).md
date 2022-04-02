@@ -7,6 +7,9 @@ Project Description:
 Expedia- it is a Expedia Group, Inc. is an American online travel shopping company for consumer and small business travel.
  Its websites, which are primarily travel fare aggregators and travel metasearch engines, include Expedia.com,
   Vrbo, Hotels.com, Hotwire.com, Orbitz, Travelocity, trivago and CarRentals.com.
+  
+  
+ deployed link: https://mellifluous-gumdrop-502df8.netlify.app/
 
 Overview of Project:
 
