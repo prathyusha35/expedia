@@ -93,7 +93,7 @@ Insert gif or link to demo
 
 https://drive.google.com/file/d/1zjVFrwZApWU-vt5McDQa6PGwk8O5cEjM/view?usp=sharing
 
-netlify link:https://dashing-sopapillas-148f0a.netlify.app/
+netlify link:https://mellifluous-gumdrop-502df8.netlify.app/
 ## Screenshots
 
 ![App Screenshot](http://127.0.0.1:5500/expedia/index.html)
